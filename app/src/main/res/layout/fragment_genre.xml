@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/genre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/searchplace"-->
+<!--        lay-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp">-->
+<!--`-->
+
+<!--    </LinearLayout>-->
+   <androidx.appcompat.widget.SearchView
+       android:id="@+id/searchview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:queryHint="Search"
+       app:iconifiedByDefault="false"
+       >
+
+   </androidx.appcompat.widget.SearchView>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/layout2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+             android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                app:tabTextColor="@color/colorgreen"
+
+
+
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabSelectedTextColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/genre">
+
+    <fragment
+        android:id="@+id/genre"
+        android:name="com.example.mangarock.Genre"
+        android:label="fragment_genre"
+        tools:layout="@layout/fragment_genre" />
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.example.mangarock.Favorites"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/first"
+        android:name="com.example.mangarock.first"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
+</navigation>
